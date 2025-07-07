@@ -1,3 +1,5 @@
+// Wide search
+
 const graph = {}
 
 graph.a = ['b', 'c']
