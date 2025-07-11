@@ -58,5 +58,5 @@ function shortestWay(graph, start, end) {
     return points
 }
 
-console.log(shortestWay(graph, 'a', 'g'))
+console.log(shortestWay(graph, 'a', 'g'))   // {b: 2, c: 1, d: 6, e: 3, f: 4, g: 5}
 
