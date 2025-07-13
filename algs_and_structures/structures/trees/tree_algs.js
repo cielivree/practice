@@ -46,10 +46,14 @@ const recursion = (tree) => {
     tree.forEach(node => {
         sum += node.v
 
+        if (!node.c) {
+            return node.v
+        }
+
         sum += recursion(node.c)
     })
 
     return sum;
 }
 
-console.log(recursion(tree)) 
+console.log(recursion(tree))   // 69
