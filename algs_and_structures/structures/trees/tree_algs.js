@@ -1,3 +1,5 @@
+// v = value, c = children
+
 const tree = [
     {
         v: 5,
@@ -39,3 +41,15 @@ const tree = [
     }
 ]
 
+const recursion = (tree) => {
+    let sum = 0;
+    tree.forEach(node => {
+        sum += node.v
+
+        sum += recursion(node.c)
+    })
+
+    return sum;
+}
+
+console.log(recursion(tree)) 
