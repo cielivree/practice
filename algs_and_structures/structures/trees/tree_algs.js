@@ -35,7 +35,7 @@ const tree = [
                 v: 10,
             },
             {
-                v: 15,
+                v: 16,
             }
         ]
     }
@@ -56,4 +56,4 @@ const recursion = (tree) => {
     return sum;
 }
 
-console.log(recursion(tree))   // 69
+console.log(recursion(tree))   // 70
