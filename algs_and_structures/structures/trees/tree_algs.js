@@ -79,4 +79,4 @@ const iteration = (tree) => {
     return sum
 }
 
-console.log(iteration(tree)) // 
+console.log(iteration(tree))   // 70
