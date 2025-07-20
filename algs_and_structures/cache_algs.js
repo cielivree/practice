@@ -22,4 +22,9 @@ function factorial(n) {
     return result
 }
 
-// console.log(factorial(5)) - 120 
+// console.log(factorial(5)) - 120
+
+const cacheFactorial = cacheFunction(factorial)
+
+console.log(cacheFactorial(5))
+console.log(cacheFactorial(4))
