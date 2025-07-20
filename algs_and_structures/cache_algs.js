@@ -1,4 +1,4 @@
-function cacheFunction(fn) {
+function cachingFunction(fn) {
     const cache = {}
 
     return function(n) {
@@ -24,9 +24,9 @@ function factorial(n) {
 
 // console.log(factorial(5)) - 120
 
-const cacheFactorial = cacheFunction(factorial)
+const cachingFactorial = cachingFunction(factorial)
 
-console.log(cacheFactorial(5))  // 120 - The function calculate
-console.log(cacheFactorial(4))  // 24 - The function calculate
-console.log(cacheFactorial(5))  // 120 - Pulling from cache
-console.log(cacheFactorial(4))  // 24 - Pulling from cache
+console.log(cachingFactorial(5))  // 120 - The function calculate
+console.log(cachingFactorial(4))  // 24 - The function calculate
+console.log(cachingFactorial(5))  // 120 - Pulling from cache
+console.log(cachingFactorial(4))  // 24 - Pulling from cache
