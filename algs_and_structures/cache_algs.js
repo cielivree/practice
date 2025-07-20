@@ -26,5 +26,7 @@ function factorial(n) {
 
 const cacheFactorial = cacheFunction(factorial)
 
-console.log(cacheFactorial(5))
-console.log(cacheFactorial(4))
+console.log(cacheFactorial(5))  // 120 - The function calculate
+console.log(cacheFactorial(4))  // 24 - The function calculate
+console.log(cacheFactorial(5))  // 120 - Pulling from cache
+console.log(cacheFactorial(4))  // 24 - Pulling from cache
