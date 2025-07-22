@@ -17,7 +17,7 @@ class LinkedList {
         }
 
         let newNode = new Node(value)
-        value.next = newNode
+        node.next = newNode
         this.size += 1
     }
 
@@ -43,3 +43,12 @@ class Node {
         this.next = null
     }
 }
+
+const list = new LinkedList()
+list.add(5)
+list.add(3)
+list.add(2)
+list.add(5)
+list.add(7)
+
+console.log(list.print())
