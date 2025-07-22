@@ -20,6 +20,21 @@ class LinkedList {
         value.next = newNode
         this.size += 1
     }
+
+    getSize() {
+        return this.size
+    }
+
+    print() {
+        let result = []
+        let node = this.root
+        while (node) {
+            result.push(node.value)
+            node = node.next
+        }
+
+        return result
+    }
 }
 
 class Node {
