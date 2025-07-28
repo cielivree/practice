@@ -31,6 +31,12 @@ class BinaryTree {
 
         }
     }
+
+    print(root = this.root) {
+        console.log(root.value)
+        this.print(root.left)
+        this.print(root.right)
+    }
 }
 
 class TreeNode {
