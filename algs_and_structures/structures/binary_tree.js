@@ -33,6 +33,9 @@ class BinaryTree {
     }
 
     print(root = this.root) {
+        if (!root) {
+            return true
+        }
         console.log(root.value)
         this.print(root.left)
         this.print(root.right)
@@ -46,3 +49,14 @@ class TreeNode {
         this.right = null
     }
 }
+
+const tree = new BinaryTree()
+tree.add(5)
+tree.add(2)
+tree.add(3)
+tree.add(1)
+tree.add(2)
+tree.add(9)
+tree.add(8)
+
+console.log(tree.print())
